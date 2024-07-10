@@ -14,5 +14,14 @@ A nostalgic Java game where the player evades AI enemies on a randomly generated
 - Enemies and target points do not overlap.
 
 ### Implementation Requirements:
+- Field size, number of obstacles, and enemies are set via command line:
+```$ java -jar game.jar --enemiesCount=10 --wallsCount=10 --size=30 --profile=production```
+- Ensure valid map generation and positioning.
+- Player moves using W (up), A (left), S (down), D (right).
+- Exit the game with 9 if the target is unreachable.
+- In development mode, confirm enemy moves with 8.
 
-Field size, number of obstacles, and enemies are set via command line:
+### Architecture Requirements:
+- Two Maven projects: Game (game logic and UI) and ChaseLogic (AI algorithm).
+- ChaseLogic is a dependency in Game's pom.xml.
+- The game should be portable with all dependencies included.
