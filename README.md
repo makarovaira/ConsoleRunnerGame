@@ -1,6 +1,8 @@
 ## Description:
 A nostalgic Java game where the player evades AI enemies on a randomly generated map to reach a target point. Implemented with Maven, featuring configurable settings and distinct game and AI logic projects.
 
+<img src="src/image.jfif" width="450" />
+
 ### Gameplay:
 - Generate a random map with obstacles.
 - Place player, enemies, and target point randomly.
